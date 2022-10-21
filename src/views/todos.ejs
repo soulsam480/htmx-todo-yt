@@ -1,0 +1,18 @@
+<!-- Add a todo i.e. call POST /api/todos -->
+<form
+  hx-post="/api/todos"
+  hx-target="#todo-list"
+  style="display: flex; flex-direction: column; gap: 2"
+>
+  <label for="todo">Create a todo</label>
+  <input name="title" placeholder="title" />
+</form>
+
+<!-- call GET /todos API once this component is loaded -->
+<ul
+  hx-get="/api/todos"
+  hx-trigger="load"
+  hx-target="this"
+  hx-swap="innerHTML"
+  id="todo-list"
+></ul>

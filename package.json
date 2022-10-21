@@ -1,0 +1,27 @@
+{
+  "name": "htmx-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/formbody": "^7.3.0",
+    "@fastify/view": "^7.1.1",
+    "ejs": "^3.1.8",
+    "fastify": "^4.9.2",
+    "mustache": "^4.2.0",
+    "tsx": "^3.10.4"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.1",
+    "@types/mustache": "^4.2.1",
+    "@types/node": "^18.11.3",
+    "typescript": "^4.8.4"
+  }
+}
